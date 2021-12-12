@@ -76,6 +76,7 @@ function draw() {
         g.fillRect(x1 + 2, y1 + 2, x2 - 2, y2 - 2);
       }
       if (row == 3 && show_time) {
+        g.setFontAlign(0,0).setFont("Vector",45);
         g.setColor(g.theme.fg).setFontAlign(0,0);
         g.drawString(time_digit[col],(x1+x2)/2,(y1+y2)/2);
       }
