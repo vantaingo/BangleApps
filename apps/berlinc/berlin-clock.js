@@ -35,6 +35,7 @@ function draw() {
     var month = now.getMonth() + 1;
     var day = now.getDate();
     var dateString = `${yr}-${month < 10 ? '0' : ''}${month}-${day < 10 ? '0' : ''}${day}`;
+    g.setFontAlign(0,0).setFont("Vector",20);
     var strWidth = g.stringWidth(dateString);
     g.setColor(g.theme.fg).setFontAlign(-1,-1);
     g.drawString(dateString, ( g.getWidth() - strWidth ) / 2, height + offset + 4);
